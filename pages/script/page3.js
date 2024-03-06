@@ -13,11 +13,11 @@ document.addEventListener('DOMContentLoaded', function() {
 
         // Kiểm tra xem người dùng đã chọn đáp án cho tất cả các câu hỏi
         const inputs = form.querySelectorAll('input[type="checkbox"]');
-        let allQuestionsAnswered = true;
+        let allQuestionsAnswered = false;
 
         inputs.forEach(input => {
             if (!input.checked) {
-                allQuestionsAnswered = false;
+                allQuestionsAnswered = true;
             }
         });
 

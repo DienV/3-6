@@ -30,11 +30,11 @@ document.addEventListener('DOMContentLoaded', function() {
     // Trong trường hợp này, chúng ta chỉ kiểm tra xem có đáp án nào được nhập hay không
     // Bạn có thể thêm logic phức tạp hơn nếu cần
     const textareas = form.querySelectorAll('textarea');
-    let allQuestionsAnswered = true;
+    let allQuestionsAnswered = false;
 
     textareas.forEach(textarea => {
         if (textarea.value.trim() === '') {
-            allQuestionsAnswered = false;
+            allQuestionsAnswered = true;
         }
     });
 
