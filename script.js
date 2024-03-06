@@ -19,7 +19,7 @@ document.addEventListener('DOMContentLoaded', function() {
             console.log(`Địa chỉ: ${address}`);
 
             // Chuyển hướng đến trang page1.html
-            window.location.href = 'pages/page1.html';
+            window.location.href = 'https://dienv.github.io/3-6/pages/page1.html';
         } else {
             alert('Vui lòng điền đầy đủ thông tin.');
         }
