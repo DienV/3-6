@@ -1,26 +1,7 @@
-// script.js
 document.addEventListener('DOMContentLoaded', function() {
-    var form = document.getElementById('freeAnswerForm');
-    var prevPageButton = document.getElementById('prevPage4');
+    const prevPageButton = document.getElementById('prevPage4');
+    const form = document.getElementById('freeAnswerForm');
 
-    // Xử lý sự kiện submit form
-    form.addEventListener('submit', function(event) {
-        event.preventDefault(); // Ngăn chặn hành vi gửi form mặc định
-
-        // Thu thập dữ liệu form
-        var formData = new FormData(form);
-
-        // Xử lý dữ liệu form và lưu kết quả (đây là nơi bạn sẽ tính toán kết quả kiểm tra)
-        // Đối với ví dụ, chúng tôi chỉ log dữ liệu form
-        for (var pair of formData.entries()) {
-            console.log(pair[0] + ', ' + pair[1]);
-        }
-
-        // Chuyển hướng đến trang kết quả
-        window.location.href = 'page5.html';
-    });
-
-    // Xử lý sự kiện click nút quay lại
     prevPageButton.addEventListener('click', function(event) {
         event.preventDefault(); // Ngăn chặn hành vi mặc định của nút
         window.location.href = 'page3.html'; // Thay đổi URL này theo trang bạn muốn chuyển đến
